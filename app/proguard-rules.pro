@@ -1,0 +1,5 @@
+-keep class com.localshare.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn okhttp3.**
+-dontwarn javax.annotation.**

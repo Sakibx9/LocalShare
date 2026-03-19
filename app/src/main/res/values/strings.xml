@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LocalShare</string>
+    <string name="host_room">Host a Room</string>
+    <string name="join_room">Join a Room</string>
+    <string name="share_files">Share Files</string>
+    <string name="download">Download</string>
+    <string name="connecting">Connecting…</string>
+    <string name="server_active">Server active</string>
+    <string name="no_files">No files shared yet. Tap + to share.</string>
+</resources>
