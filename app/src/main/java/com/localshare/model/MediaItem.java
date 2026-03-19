@@ -13,6 +13,7 @@ public class MediaItem {
     private String uploader;
     private long uploadTime;
     private String mimeType;
+    private String localPath; // path on server disk
 
     public MediaItem() {}
 
@@ -45,14 +46,16 @@ public class MediaItem {
     public String getUploader() { return uploader; }
     public void setUploader(String uploader) { this.uploader = uploader; }
     public long getUploadTime() { return uploadTime; }
-    public void setUploadTime(long uploadTime) { this.uploadTime = uploadTime; }
+    public void setUploadTime(long t) { this.uploadTime = t; }
     public String getMimeType() { return mimeType; }
-    public void setMimeType(String mimeType) { this.mimeType = mimeType; }
+    public void setMimeType(String m) { this.mimeType = m; }
+    public String getLocalPath() { return localPath; }
+    public void setLocalPath(String p) { this.localPath = p; }
 
     public String getFormattedSize() {
         if (size < 1024) return size + " B";
         if (size < 1024 * 1024) return String.format("%.1f KB", size / 1024.0);
-        if (size < 1024 * 1024 * 1024) return String.format("%.1f MB", size / (1024.0 * 1024));
+        if (size < 1024L * 1024 * 1024) return String.format("%.1f MB", size / (1024.0 * 1024));
         return String.format("%.1f GB", size / (1024.0 * 1024 * 1024));
     }
 }

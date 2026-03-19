@@ -1,5 +1,5 @@
 -keep class com.localshare.** { *; }
+-keep class com.google.zxing.** { *; }
 -keepattributes Signature
 -keepattributes *Annotation*
--dontwarn okhttp3.**
--dontwarn javax.annotation.**
+-dontwarn com.google.zxing.**
